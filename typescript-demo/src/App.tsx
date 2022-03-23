@@ -1,12 +1,17 @@
 import './App.css';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 import { Button } from './components/Button';
 import { Container } from './components/Container';
+import Box from './components/context/Box';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
 import { Listname } from './components/Listname';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
+import Domref from './components/ref/Domref';
+import { Mutalref } from './components/ref/Mutalref';
 import { Counter } from './components/state/Counter';
 import { LoggedIn } from './components/state/LoggidIn';
 import { User } from './components/state/User';
@@ -51,6 +56,10 @@ function App() {
     <LoggedIn />
     <User  />
     <Counter />
+    <Box />
+    <Domref />
+    <Mutalref />
+    <Private isLoggedIn={true} Component={Profile} />
     </div>
   );
 }
