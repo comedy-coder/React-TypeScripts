@@ -16,6 +16,10 @@ import { Counter } from './components/state/Counter';
 import { LoggedIn } from './components/state/LoggidIn';
 import { User } from './components/state/User';
 import { Status } from './components/Status';
+import {List } from './components/Generic/List'
+import { RandomNumber } from './components/retriction/randomNumber';
+import { Toast } from './components/templet/Toast';
+
 
 
 
@@ -60,7 +64,12 @@ function App() {
     <Domref />
     <Mutalref />
     <Private isLoggedIn={true} Component={Profile} />
+    <List items = {['abc','bcd','def']} onClick={(item)=>console.log(item)}/>
+    <List items = {[1,2,3]} onClick={(item)=>console.log(item)}/>
+    <RandomNumber value={10} isZero />
+      <Toast position='center' />
     </div>
+    
   );
 }
 

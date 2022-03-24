@@ -9,7 +9,6 @@ export const Private = ({isLoggedIn  , Component} : PrivateProp) => {
         return < Component name='ngo thanh dat' />
     }
     else {
-        return
-        <Login />
+        return (<Login />)
     }
 }
