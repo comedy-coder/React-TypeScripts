@@ -19,6 +19,7 @@ import { Status } from './components/Status';
 import {List } from './components/Generic/List'
 import { RandomNumber } from './components/retriction/randomNumber';
 import { Toast } from './components/templet/Toast';
+import { CustomButton } from './components/html/Button';
 
 
 
@@ -68,6 +69,9 @@ function App() {
     <List items = {[1,2,3]} onClick={(item)=>console.log(item)}/>
     <RandomNumber value={10} isZero />
       <Toast position='center' />
+    <CustomButton variant='primary' onClick={()=>console.log('CLicked')}>
+       Primary button a
+    </CustomButton>
     </div>
     
   );
